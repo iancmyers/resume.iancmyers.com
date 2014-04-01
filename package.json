@@ -1,0 +1,18 @@
+{
+  "name": "resume.iancmyers.com",
+  "version": "1.0.0",
+  "description": "The résumé of Ian Christian Myers, Engineer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Ian Christian Myers <ian@iancmyers.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-compass": "^1.1.8",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.0"
+  }
+}

@@ -1,0 +1,108 @@
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/columns";
+
+$serif: "Merriweather", "Georgia", serif;
+$sans-serif: "Merriweather Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$grid-background-baseline-height: $base-line-height;
+
+@include establish-baseline;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  // @include debug-vertical-alignment;
+}
+
+article {
+  max-width: 46em;
+  padding: 3em;
+  margin: 0 auto;
+  font-weight: 300;
+  font-family: $serif;
+}
+
+header {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5em;
+  }
+
+  li {
+    display: inline-block;
+
+    &:after {
+      content: " · ";
+      margin: 0 0.25em;
+      font-weight: 900;
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0.3em 0;  
+  font-family: $sans-serif;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin: 1.75em 0 0.75em;  
+  font-family: $sans-serif;
+  font-weight: 800;
+}
+
+h3 {
+  margin: 1em 0;
+  font-family: $sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+
+  .superhead {
+    text-transform: uppercase;
+    display: block;
+    font-size: 0.5em;
+    font-weight: 800;
+  }
+
+  .subhead {
+    font-style: italic;
+    font-size: 0.75em;
+    line-height: 1em;
+    margin: 0 0 0 0.25em;
+  }
+}
+
+a {
+  color: #71EEB8;
+  display: inline-block;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+.skills ul {
+  margin: 0;
+  padding: 0;
+  @include column-count(4);
+}
