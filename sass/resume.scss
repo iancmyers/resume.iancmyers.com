@@ -2,6 +2,9 @@
 @import "compass/css3/transition";
 @import "compass/css3/columns";
 
+$bold: 800;
+$normal: 300;
+
 $serif: "Merriweather", "Georgia", serif;
 $sans-serif: "Merriweather Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
@@ -62,7 +65,7 @@ header {
     &:after {
       content: " · ";
       margin: 0 0.25em;
-      font-weight: 900;
+      font-weight: $bold;
     }
 
     &:last-child:after {
@@ -75,27 +78,27 @@ h1 {
   font-size: 2.5em;
   margin: 0.3em 0;  
   font-family: $sans-serif;
-  font-weight: 800;
+  font-weight: $bold;
 }
 
 h2 {
   font-size: 1.75em;
   margin: 1.75em 0 0.75em;  
   font-family: $sans-serif;
-  font-weight: 800;
+  font-weight: $bold;
 }
 
 h3 {
   margin: 1em 0;
   font-family: $sans-serif;
-  font-weight: 300;
+  font-weight: $normal;
   font-size: 1.5em;
 
   .superhead {
     text-transform: uppercase;
     display: block;
     font-size: 0.5em;
-    font-weight: 800;
+    font-weight: $bold;
   }
 
   .subhead {
