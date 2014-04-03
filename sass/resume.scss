@@ -11,8 +11,8 @@ $sans-serif: "Merriweather Sans", "Helvetica Neue", "Helvetica", "Arial", sans-s
 $base-font-size: 16px;
 $base-line-height: 24px;
 
-$text-color: #000;
-$primary-color: adjust-saturation(shade(#71EEB8, 40%), 100%);
+$text-color-black: #000;
+$text-color-seafoam: #00cc66;
 
 $grid-background-baseline-height: $base-line-height;
 
@@ -30,12 +30,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  // @include debug-vertical-alignment;
 }
 
 article {
-  max-width: 46em;
-  padding: 3em;
+  max-width: 47.5em;
+  padding: 1.5em;
   margin: 0 auto;
   font-weight: 300;
   font-family: $serif;
@@ -43,11 +42,11 @@ article {
 
 section {
   a {
-    color: $text-color;
+    color: $text-color-black;
   }
 
   &:hover a {
-    color: $primary-color;
+    color: $text-color-seafoam;
   }
 }
 
@@ -75,42 +74,42 @@ header {
 }
 
 h1 {
-  font-size: 2.5em;
-  margin: 0.3em 0;  
+  font-size: 1.5em;
+  margin: 0;  
   font-family: $sans-serif;
   font-weight: $bold;
 }
 
 h2 {
-  font-size: 1.75em;
-  margin: 1.75em 0 0.75em;  
+  font-size: 1.25em;
+  margin: 1.125em 0 0;  
   font-family: $sans-serif;
   font-weight: $bold;
 }
 
 h3 {
-  margin: 1em 0;
+  margin: 0;
   font-family: $sans-serif;
   font-weight: $normal;
-  font-size: 1.5em;
+  font-size: 1.125em;
 
   .superhead {
     text-transform: uppercase;
     display: block;
-    font-size: 0.5em;
+    font-size: 0.65em;
     font-weight: $bold;
   }
 
   .subhead {
     font-style: italic;
-    font-size: 0.75em;
-    line-height: 1em;
-    margin: 0 0 0 0.25em;
+    font-size: 0.85em;
+    margin: 0;
+    display: block;
   }
 }
 
 a {
-  color: $primary-color;
+  color: $text-color-seafoam;
   display: inline-block;
   text-decoration: none;
   @include transition(color, 0.4s);
@@ -120,8 +119,54 @@ p {
   margin: 0 0 1.5em;
 }
 
+.currently ul {
+  margin: 1.5em 0;
+}
+
 .skills ul {
   margin: 0;
   padding: 0;
-  @include column-count(4);
+  @include column-count(2);
+}
+
+@media screen and (min-width: 37em) {
+  article {
+    padding: 3em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin: 0.3em 0;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin: 1.75em 0 0.75em;  
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin: 1em 0;
+
+    .superhead {
+      font-size: 0.5em;
+    }
+
+    .subhead {
+      display: inline-block;
+      font-size: 0.75em;
+      line-height: 1em;
+      margin: 0 0 0 0.25em;
+    }
+  }
+
+  .skills ul {
+    @include column-count(3);
+  }
+}
+
+@media screen and (min-width: 47em) {
+  .skills ul {
+    @include column-count(4);
+  }
 }
