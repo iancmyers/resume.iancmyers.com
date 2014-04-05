@@ -126,10 +126,11 @@ p {
 .skills ul {
   margin: 0;
   padding: 0;
+  list-style: none;
   @include column-count(2);
 }
 
-@media screen and (min-width: 37em) {
+@media all and (min-width: 37em) {
   article {
     padding: 3em;
   }
@@ -165,8 +166,28 @@ p {
   }
 }
 
-@media screen and (min-width: 47em) {
+@media all and (min-width: 47em) {
   .skills ul {
     @include column-count(4);
+  }
+}
+
+@media print {
+  h1 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  article {
+    padding: 0;
+  }
+
+  @page {
+    margin: 1.25in;
+  }
+
+  a {
+    color: $text-color-black;
+    border: 0;
   }
 }
