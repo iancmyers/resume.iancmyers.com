@@ -10,4 +10,4 @@ bundle install
 npm install
 ```
 
-Compile the SASS and watch for changes with `gulp` or `gulp watch`.
+Compile the Sass and watch for changes with `gulp` or `gulp watch`.
