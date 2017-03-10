@@ -11,7 +11,9 @@ var paths = {
 gulp.task('css', function () {
   gulp.src('./sass/*.scss')
     .pipe(compass({ css: './tmp/css' }))
-    .on('error', function(err) {})
+    .on('error', function(err) {
+      console.log(err);
+    })
     .pipe(minifyCSS())
     .pipe(concat('iancmyers.min.css'))
     .pipe(gulp.dest('public/css'));

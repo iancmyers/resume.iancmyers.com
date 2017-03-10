@@ -12,7 +12,7 @@ $base-font-size: 16px;
 $base-line-height: 24px;
 
 $text-color-black: #000;
-$text-color-seafoam: #00cc66;
+$text-color-electric-blue: #0366d6;
 
 $grid-background-baseline-height: $base-line-height;
 
@@ -47,7 +47,7 @@ section {
   }
 
   &:hover a {
-    color: $text-color-seafoam;
+    color: $text-color-electric-blue;
   }
 }
 
@@ -77,15 +77,15 @@ header {
 h1 {
   font-size: 1.5rem;
   line-height: 3rem;
-  margin: 0;  
+  margin: 0;
   font-family: $sans-serif;
   font-weight: $bold;
 }
 
 h2 {
   font-size: 1.25rem;
-  margin: 1.5rem 0 0.25rem; 
-  line-height: 2.75rem; 
+  margin: 1.5rem 0 0.25rem;
+  line-height: 2.75rem;
   font-family: $sans-serif;
   font-weight: $bold;
 }
@@ -114,7 +114,7 @@ h3 {
 }
 
 a {
-  color: $text-color-seafoam;
+  color: $text-color-electric-blue;
   display: inline-block;
   text-decoration: none;
   @include transition(color, 0.4s);
