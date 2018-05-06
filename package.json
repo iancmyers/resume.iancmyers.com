@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "The résumé of Ian Christian Myers, Engineer",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel index.html --https",
     "build": "rm -rf ./dist && parcel build index.html && cp ./CNAME ./dist/CNAME",
     "push": "git subtree push --prefix dist origin gh-pages"
   },
