@@ -4,10 +4,10 @@
   "description": "The résumé of Ian Christian Myers, Engineer",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
+    "build": "parcel build index.html",
     "push": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
-  "repository": "",
+  "repository": "https://github.com/iancmyers/resume.iancmyers.com",
   "author": "Ian Christian Myers <ian@iancmyers.com>",
   "license": "MIT",
   "devDependencies": {

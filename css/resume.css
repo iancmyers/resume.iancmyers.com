@@ -105,6 +105,7 @@ header dd:first-of-type::after {
 
 footer {
   border-top: 1px solid #e8ebef;
+  font-size: 0.875rem;
   margin: 0 0 3rem;
 }
 
@@ -163,6 +164,13 @@ ul {
   }
 }
 
+/* 
+
+♻️ Please consider the environment before printing my résumé. 
+
+🖨 Let's make it printer friendly, for the folks who prefer a hard copy. 
+
+*/
 @media print {
   h1 {
     margin-top: 0;
