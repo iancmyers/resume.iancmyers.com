@@ -142,10 +142,6 @@ ul {
 }
 
 @media(max-width: 35rem) {
-  html {
-    font-size: 14px;
-  }
-
   h1 {
     font-size: 1.75rem;
   }
@@ -161,6 +157,10 @@ ul {
   article {
     padding: 0 1.5rem;
     margin: 1.5rem auto;
+  }
+
+  .skills-list {
+    column-count: 1;
   }
 }
 
