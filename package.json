@@ -4,14 +4,19 @@
   "description": "The résumé of Ian Christian Myers, Engineer",
   "scripts": {
     "start": "parcel index.html --https",
-    "build": "rm -rf ./dist && parcel build index.html && cp ./CNAME ./dist/CNAME",
+    "build":
+      "npm run clean && npm run prettier && parcel build index.html && cp ./CNAME ./dist/CNAME",
+    "clean": "rm -rf ./dist",
+    "prettier": "prettier service-worker.js js/*.js css/*.css !dist --write",
     "push": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": "https://github.com/iancmyers/resume.iancmyers.com",
   "author": "Ian Christian Myers <ian@iancmyers.com>",
   "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "^1.8.1"
+    "autoprefixer": "^8.4.1",
+    "parcel-bundler": "^1.8.1",
+    "prettier": "1.12.1"
   },
   "private": true
 }
