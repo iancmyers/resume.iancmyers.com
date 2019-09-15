@@ -199,3 +199,9 @@ ul {
     display: none;
   }
 }
+
+@media (prefers-dark-interface) {
+  body {
+    background-color: #000;
+  }
+}
