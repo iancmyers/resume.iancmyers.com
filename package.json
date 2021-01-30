@@ -13,9 +13,9 @@
   "author": "Ian Christian Myers <ian@iancmyers.com>",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.7.5",
+    "autoprefixer": "^9.8.6",
     "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.2"
+    "prettier": "^2.2.1"
   },
   "private": true
 }
