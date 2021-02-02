@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -33,7 +34,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 3rem;
   margin: 0;
 }
@@ -41,7 +42,7 @@ h3 {
 h4 {
   font-size: 1rem;
   font-style: italic;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5rem;
   margin: 0;
 }
@@ -53,7 +54,7 @@ h4 span {
 
 a {
   border-bottom: 1px solid #e8ebef;
-  color: #61718d;
+  color: #343d4c;
   text-decoration: none;
 }
 
@@ -71,15 +72,21 @@ article {
   padding: 0 9rem;
 }
 
+.smear {
+  background: linear-gradient(90deg, rgba(52, 61, 76, 1) 6rem, rgba(68, 70, 61, 1) 100%);
+  transition: ease-in-out filter 1s;
+}
+
+.offline .smear {
+  filter: grayscale(100%);
+}
+
 .icm {
   width: 6rem;
   height: 6rem;
   border-radius: 1rem;
   object-fit: cover;
   object-position: 50% 45%;
-  float: left;
-  margin: -0.75rem 0 0 -7.5rem;
-
   transition: ease-in-out filter 1s;
 }
 
@@ -116,31 +123,9 @@ ul {
   margin: 0;
 }
 
-.skills-list {
-  list-style: none;
-  padding: 0;
-  column-count: 4;
-}
-
-@media (max-width: 60rem) {
-  .icm {
-    float: none;
-    margin: 1.5rem auto;
-    display: block;
-  }
-
-  .skills-list {
-    column-count: 3;
-  }
-}
-
 @media (max-width: 48rem) {
   article {
     padding: 0 4.5rem;
-  }
-
-  .skills-list {
-    column-count: 2;
   }
 }
 
@@ -195,13 +180,23 @@ ul {
   }
 
   footer,
-  .icm {
+  .smear {
     display: none;
   }
 }
 
-@media (prefers-dark-interface) {
+@media (prefers-color-scheme: dark) {
   body {
-    background-color: #000;
+    background: linear-gradient(135deg, rgba(52, 61, 76, 1) 6rem, rgba(68, 70, 61, 1) 100%);
+    color: #fff;
+  }
+
+  .smear {
+    background: transparent;
+  }
+
+  a {
+    border-bottom: 1px solid #343d4c;
+    color: #d09a8d;
   }
 }
