@@ -1,0 +1,2 @@
+window.addEventListener("online",function(){document.body.classList.remove("offline")}),window.addEventListener("offline",function(){document.body.classList.add("offline")}),navigator.onLine||document.body.classList.add("offline"),"console"in window&&console.log("\uD83D\uDC4B You can find the full source here: https://github.com/iancmyers/resume.iancmyers.com"),"serviceWorker"in navigator&&navigator.serviceWorker.register(new URL("../service-worker.js"));
+//# sourceMappingURL=index.25ac4797.js.map

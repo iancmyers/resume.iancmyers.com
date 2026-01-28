@@ -17,26 +17,26 @@ workbox.routing.registerRoute(
         maxAgeSeconds: 7 * 24 * 60 * 60, // 1 Week
       }),
     ],
-  })
+  }),
 );
 
 workbox.routing.registerRoute(
   new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
   workbox.strategies.cacheFirst({
     cacheName: 'googleapis',
-  })
+  }),
 );
 
 workbox.routing.registerRoute(
   /\.(?:png|gif|jpg|jpeg|svg)$/,
   workbox.strategies.cacheFirst({
     cacheName: 'images',
-  })
+  }),
 );
 
 workbox.routing.registerRoute(
   /\.(?:js|css)$/,
   workbox.strategies.cacheFirst({
     cacheName: 'static-resources',
-  })
+  }),
 );

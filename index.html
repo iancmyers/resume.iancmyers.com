@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -16,25 +16,26 @@
     </script>
 
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-    <title>Ian Christian Myers, Senior Engineering Manager - Résumé</title>
+    <title>Ian Christian Myers, Engineering Leader - Résumé</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Resumé of Ian Christian Myers, Senior Engineering Manager" />
 
-    <link rel="icon" type="image/png" href="images/favicon.ico" />
-
-    <!-- 💅 -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link
-  href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;1,300&family=Merriweather:wght@300&family=PT+Serif&display=swap"
-  rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
 
     <!-- 💄 -->
-    <link href="css/resume.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="assets/css/resume.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- 🕺 Un-comment the line below to show the vertical rhythm guide -->
-    <!-- <link rel="stylesheet" href="//basehold.it/24"> -->
+    <!-- <link rel="stylesheet" href="//basehold.it/27" /> -->
 
-    <script async src="js/resume.js"></script>
+    <script async src="assets/js/resume.js"></script>
   </head>
   <body>
     <div class="smear">
@@ -42,23 +43,21 @@
               This was created by Nick Vincent as part of his I'm Still in Beta 
               project: https://imstillinbeta.com
             -->
-      <img src="images/icm-96w.png" srcset="
-                images/icm-96w.png  1x,
-                images/icm-192w.png 2x,
-                images/icm-288w.png 3x,
-                images/icm-384w.png 4x,
-                images/icm-480w.png 5x
-              " class="icm" alt="Drawing of Ian Christian Myers" />
+      <img
+        src="./assets/images/sad-icm-black.png"
+        class="icm"
+        alt="Drawing of Ian Christian Myers"
+      />
     </div>
     <article role="main">
       <header>
         <h1>Ian Christian Myers</h1>
         <dl>
-          <dt>Role</dt>
-          <dd>Senior Engineering Manager</dd>
-
           <dt>Email Address</dt>
           <dd><a href="mailto:ian@iancmyers.com">ian@iancmyers.com</a></dd>
+
+          <dt>Phone</dt>
+          <dd><a href="tel:+17024390934">702-439-0934</a></dd>
         </dl>
       </header>
 
@@ -66,71 +65,122 @@
         <h2>Currently</h2>
 
         <h3><a href="https://www.airbnb.com/">Airbnb</a></h3>
-        <h4>Senior Engineering Manager, <span>2019 &ndash; Today</span></h4>
-        <h4>Engineering Manager, <span>2016 &ndash; 2019</span></h4>
-        <h4>Senior Software Engineer, <span>2014 &ndash; 2016</span></h4>
+        <div class="role">
+          <h4>
+            Sr. Engineering Manager, Client & Service Platforms <span>2019 &ndash; Today</span>
+          </h4>
 
-        <p>
-          I lead the web, iOS, Android, and service platform teams at Airbnb&mdash;an org of 35 
-          engineers. In my role I set the high-level strategy and support the team on executing 
-          against our mission to improve the productivity of Airbnb engineers and enable developers 
-          to ship high quality code. Many of my team's projects have been featured on Airbnb's 
-          engineering blog:
-        </p>
+          <p>
+            Lead a ~35-person organization of 4 platform teams—Android, iOS, Java, and
+            Web—responsible for developer experience and productivity tooling used by 2,500+
+            engineers:
+          </p>
 
-        <ul>
-          <li><a href="https://medium.com/airbnb-engineering/ts-migrate-a-tool-for-migrating-to-typescript-at-scale-cd23bfeb5cc">ts-migrate: A Tool for Migrating to TypeScript at Scale</a></li>
-          <li><a href="https://medium.com/airbnb-engineering/server-rendering-code-splitting-and-lazy-loading-with-react-router-v4-bfe596a6af70">Server Rendering, Code Splitting, and Lazy Loading with React Router v4</a></li>
-          <li><a href="https://medium.com/airbnb-engineering/recent-web-performance-fixes-on-airbnb-listing-pages-6cd8d93df6f4">React Performance Fixes on Airbnb Listing Pages</a></li>
-        </ul>
+          <ul>
+            <li>
+              Developed the Client & Service Platform teams' technical strategy centered on reducing
+              developer cognitive load. Drove platform simplification initiatives across all
+              platforms, resulting in developer experience CSAT improvements: Android (78%→98%), iOS
+              (86%→95%), Web (76%→91%), JVM (69%→82%).
+            </li>
+            <li>
+              Initiated and led 5-year Ruby service deprecation strategy: drove decision to halt new
+              Ruby service creation, established deprecation timeline, designed and led the program
+              execution—resulting in decommissioning of ~100 Ruby services and eliminating Ruby
+              (almost) entirely from Airbnb's production stack.
+            </li>
+            <li>
+              Proposed and drove consolidation of fragmented build systems onto Bazel with shared
+              infrastructure across Web, iOS, Java, Go, and Python—iOS build times reduced 46%
+              (P50), Web CI 29-42% faster; Backend builds 2-3x faster with 72% flake rate reduction.
+            </li>
+            <li>
+              Developed strategy to accelerate tech debt reduction while minimizing developer burden
+              through AI-assisted migration automation; initial proof-of-concept migrated 10,000
+              Enzyme tests to React Testing Library in 6 weeks with zero product engineer effort,
+              then scaled infrastructure org-wide, saving 10+ engineer-years of effort with
+              migrations 3-10x faster.
+            </li>
+            <li>
+              Developed engineering managers through full career arcs—one direct report grew from
+              Senior IC to Senior EM over 7 years (12-person team → 25-person org with 2 EMs), now
+              operating as a peer. Established a track record of building leadership bench that gets
+              promoted into expanded roles.
+            </li>
+          </ul>
+        </div>
 
-        <p>
-          I previously managed Airbnb's Accessibility team, which helps iOS, Android, and web
-          engineers build accessible UIs.
-        </p>
+        <div class="role">
+          <h4>Engineering Manager, Web Platform & Accessibility <span>2016 &ndash; 2019</span></h4>
+
+          <p>Managed 15 engineers across Web Platform and Accessibility teams:</p>
+          <ul>
+            <li>
+              Team led the migration of Airbnb's entire web frontend (~5M lines of code) out of a
+              monolithic Rails application to a new Node.js-based architecture.
+            </li>
+            <li>
+              Established early migration automation practices using codemods that later evolved
+              into org-wide AI-assisted migration strategy.
+            </li>
+            <li>
+              Team led Airbnb's adoption of TypeScript, taking codebase from 0% to 100% adoption
+              over 3 years, during which we built and open-sourced ts-migrate.
+            </li>
+            <li>Team open-sourced Enzyme, which became a widely-adopted React testing library.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <h4>Senior Software Engineer & Tech Lead, Web Platform <span>2014 &ndash; 2016</span></h4>
+
+          <p>
+            Tech Lead for Web Platform. Drove consolidation from 4 competing frontend frameworks
+            (Rails/ERB, Backbone, Flight.js, React) onto React as the standard for new feature
+            development. Led web performance initiatives including server-side rendering and code
+            splitting.
+          </p>
+        </div>
       </section>
 
       <section>
         <h2>Previously</h2>
 
         <h3><a href="https://findery.com">Findery</a></h3>
-        <h4>Senior Software Engineer, <span>2012 &ndash; 2014</span></h4>
-
-        <p>
-          Lead development of the public API. Helped scale the website and private API to accommodate
-          launch-day traffic. 
-        </p>
+        <div class="role">
+          <h4>Senior Software Engineer <span>2012 &ndash; 2014</span></h4>
+          <p>Built the public API and scaled infrastructure for launch.</p>
+        </div>
 
         <h3><a href="http://zappos.com">Zappos</a></h3>
-        <h4>Senior Software Engineer, <span>2009 &ndash; 2012</span></h4>
-        <h4>Software Engineer, <span>2008 &ndash; 2009</span></h4>
 
-        <p>
-          Architected and lead the front-end development of a complete redesign while working on the
-          front-end team at Zappos HQ. After transitioning to the Zappos Labs team, lead several
-          experiments and projects.
-        </p>
+        <div class="role">
+          <h4>Senior Software Engineer <span>2009 &ndash; 2012</span></h4>
+          <p>Led various product experiments on the Zappos Labs team.</p>
+        </div>
+        <div class="role">
+          <h4>Software Engineer <span>2008 &ndash; 2009</span></h4>
+
+          <p>Led frontend architecture for Zappos site redesign, built the Zappos Map.</p>
+        </div>
       </section>
 
       <section>
         <h2>Education</h2>
 
         <h3><a href="https://www.ucsc.edu/">University of California, Santa Cruz</a></h3>
-        <h4>BA, Politics, <span>2008</span></h4>
+        <h4>BA, Politics <span>Class of 2008</span></h4>
 
         <p>
-          While studying Politics at UCSC I also made time for a number of Computer Science and
-          Computer Engineering courses. I was a Research Assistant in the Computer Science
-          department and guest lectured for a course called From Software Innovation to Social
-          Enterpreneurship.
+          While studying Politics at UCSC I made time for a handful of Computer Science and Computer
+          Engineering courses. I was a Research Assistant in the Computer Science department and
+          guest lectured for a course called From Software Innovation to Social Enterpreneurship.
         </p>
       </section>
 
       <footer>
         <p>
-          You can find me on <a href="https://twitter.com/iancmyers">Twitter</a> (but you should
-          remember that I studied Politics). <br />You can find the full source for this
-          r&eacute;sum&eacute; on GitHub at
+          You can find the full source for this r&eacute;sum&eacute; on GitHub at
           <a href="https://github.com/iancmyers/resume.iancmyers.com"
             >iancmyers/resume.iancmyers.com</a
           >.

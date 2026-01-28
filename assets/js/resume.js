@@ -14,11 +14,11 @@ if (!navigator.onLine) {
 // It's always nice to be friendly in the console.
 if ('console' in window) {
   console.log(
-    '👋 You can find the full source here: https://github.com/iancmyers/resume.iancmyers.com'
+    '👋 You can find the full source here: https://github.com/iancmyers/resume.iancmyers.com',
   );
 }
 
 // ⚙️ Let's over-engineer this a little more with a ServiceWorker.
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('../service-worker.js');
+  navigator.serviceWorker.register(new URL('../service-worker.js'));
 }
