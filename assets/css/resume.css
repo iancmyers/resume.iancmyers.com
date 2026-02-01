@@ -160,12 +160,14 @@ li {
 
 /* 
 
-♻️ Please consider the environment before printing my résumé. 
-
 🖨 Let's make it printer friendly, for the folks who prefer a hard copy. 
 
 */
 @media print {
+  html {
+    font-size: 12px;
+  }
+
   h1 {
     margin-top: 0;
     padding-top: 0;
@@ -174,35 +176,23 @@ li {
   article {
     padding: 0;
     margin: 0;
+    max-width: 100%;
   }
 
   @page {
     margin: 1in 1.25in;
   }
 
-  a {
-    color: #000;
+  a,
+  h1,
+  h2,
+  h3,
+  h4 {
     border: 0;
   }
 
-  footer,
-  .smear {
+  .smear,
+  footer {
     display: none;
   }
 }
-
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background: linear-gradient(135deg, rgba(52, 61, 76, 1) 6rem, rgba(68, 70, 61, 1) 100%);
-    color: #fff;
-  }
-
-  .smear {
-    background: transparent;
-  }
-
-  a {
-    border-bottom: 1px solid #343d4c;
-    color: #d09a8d;
-  }
-} */
