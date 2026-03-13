@@ -97,8 +97,8 @@ article {
 }
 
 .icm {
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   object-fit: cover;
   transition: ease-in-out filter 1s;
   opacity: 0.85;
