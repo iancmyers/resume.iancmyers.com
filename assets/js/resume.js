@@ -20,5 +20,5 @@ if ('console' in window) {
 
 // ⚙️ Let's over-engineer this a little more with a ServiceWorker.
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register(new URL('../service-worker.js'));
+  navigator.serviceWorker.register(new URL('/service-worker.js', import.meta.url));
 }
