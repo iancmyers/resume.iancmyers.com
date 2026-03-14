@@ -15,11 +15,11 @@ body {
 /* Name */
 h1 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 450;
   margin: 0;
   padding: 0;
   line-height: 2.25rem;
-  color: rgba(0, 0, 255, 1);
+  /* color: rgba(0, 0, 255, 1); */
 }
 
 /* Section Headings */
@@ -31,23 +31,29 @@ h2 {
   margin: 2rem 0 0;
   color: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Company Headings */
 h3 {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 450;
   line-height: 1.8rem;
   margin: 2rem 0 1rem;
 }
 
+h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Role Headings */
 h4 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 450;
+  line-height: 1.35rem;
   margin: 2rem 0 1rem;
-  color: rgba(0, 0, 255, 0.75);
+  /* color: rgba(0, 0, 255, 0.75); */
 }
 
 /* Tighten spacing when headings are adjacent */
@@ -58,6 +64,7 @@ h4 {
 h4 span {
   font-weight: 300;
   display: block;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 a {
@@ -83,7 +90,7 @@ article {
 }
 
 .logo {
-  margin: 0 auto 1rem;
+  margin: 0 auto 2rem -0.7rem;
   text-align: center;
   font-size: 0;
 }
@@ -92,7 +99,12 @@ article {
   width: 4.5rem;
   height: 4.5rem;
   object-fit: cover;
-  opacity: 0.85;
+  opacity: 0.8;
+}
+
+header p {
+  text-align: left;
+  font-style: italic;
 }
 
 header dl {
@@ -124,6 +136,14 @@ footer {
 ul,
 li {
   margin: 1rem 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  padding-left: 0.5rem;
 }
 
 @media (max-width: 480px) {
