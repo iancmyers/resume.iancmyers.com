@@ -147,16 +147,6 @@ li {
   padding-left: 0.5rem;
 }
 
-@media (max-width: 480px) {
-  /* html {
-    font-size: 16px;
-  } */
-
-  .logo {
-    margin-bottom: 1rem;
-  }
-}
-
 /*
 
 🖨 Let's make it printer friendly, for the folks who prefer a hard copy.
