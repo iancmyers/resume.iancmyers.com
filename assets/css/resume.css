@@ -86,13 +86,14 @@ p {
 article {
   margin: 0 auto;
   max-width: 38rem;
-  padding: 2rem 1rem;
+  padding: 1rem;
 }
 
 .logo {
   margin: 0 auto 2rem;
   text-align: center;
   font-size: 0;
+  line-height: 0;
 }
 
 .icm {
